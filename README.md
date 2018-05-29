@@ -1,8 +1,8 @@
 # flexible-demo
-# 手淘flexible.js关于rem的移动端适配
+# 手淘flexible.js关于rem的移动端适配【适应宽度375,1200】可修改
 
-     结尾参数  【最小宽度，最大宽度】这里【375,100】
-     以iphone6  375【这里的375为flexiblejs参数】设计图
+     flexible.js结尾参数  【最小宽度，最大宽度】这里【375,1200】
+     以iphone6 375 设计图
      1rem = 100px
      1px = 0.01rem
      14px/100 = .14rem
