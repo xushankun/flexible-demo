@@ -5,10 +5,10 @@
      以iphone6 750 设计图    参数【375,1200】
      1rem = 100px
      1px = 0.01rem
-     14px/100 = .14rem
+     计算示例： 14px/100 = .14rem
 
 
 # 阿里CDN的文件【好像不支持ipad】
      这里则是设备宽的十分之一
-     <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>`
+     <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
 
