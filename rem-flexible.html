@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>手淘flexible.js关于rem的移动端适配 </title>
+
+    <!--结尾参数  【最小宽度，最大宽度】-->
+    <!--以iphone6  375【这里的375为flexiblejs参数】设计图-->
+    <!--1rem = 100px-->
+    <!--1px = 0.01rem-->
+    <!--14px/100 = .14rem-->
+
+    <link rel="stylesheet" href="base.css">
+    <script type="text/javascript">
+        //引入该flexible.min.js
+        !function(e,t){function n(){var n=l.getBoundingClientRect().width;t=t||540,n>t&&(n=t);var i=100*n/e;r.innerHTML="html{font-size:"+i+"px;}"}var i,d=document,o=window,l=d.documentElement,r=document.createElement("style");if(l.firstElementChild)l.firstElementChild.appendChild(r);else{var a=d.createElement("div");a.appendChild(r),d.write(a.innerHTML),a=null}n(),o.addEventListener("resize",function(){clearTimeout(i),i=setTimeout(n,300)},!1),o.addEventListener("pageshow",function(e){e.persisted&&(clearTimeout(i),i=setTimeout(n,300))},!1),"complete"===d.readyState?d.body.style.fontSize="16px":d.addEventListener("DOMContentLoaded",function(e){d.body.style.fontSize="16px"},!1)}(375,1200);
+    </script>
+
+    <!-- 加载阿里CDN的文件-->
+    <!--这里则是设备宽的十分之一-->
+    <!--<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>-->
+    <style>
+
+        .demo{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .header, .footer {
+            width: 100%;
+            height: .5rem;
+            line-height: .5rem;
+            font-size: .14rem;
+            text-align: center;
+        }
+        .header {
+            background: #e6e6e6;
+        }
+        .content {
+            box-sizing: border-box;
+            height: calc(100% - 1rem);
+            padding: 0.15rem;
+            overflow: scroll;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            background: #e6e6e6;
+        }
+        .fs1 {
+            font-size: .12rem;
+        }
+        /*列表*/
+        .list-block li{
+            padding: 0 0.1rem;
+            height: .45rem;
+            line-height: .45rem;
+            border-bottom: 0.001rem solid #e7e7e7;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+<!-- 正文 -->
+<div class="demo">
+    <div class="header">
+        我是行高50的头部
+    </div>
+    <div class="content">
+        <ul class="list-block">
+            <li>
+                <div class="fs1">以iphone6  375【这里的375为flexiblejs参数】设计图</div>
+            </li>
+            <li>
+                <div class="fs1">1rem = 100px</div>
+            </li>
+            <li>
+                <div class="fs1">1px = 0.01rem</div>
+            </li>
+            <li>
+                <div class="fs1">14px/100 = .14rem</div>
+            </li>
+            <li>
+                <div class="fs1">字体大小12px</div>
+            </li>
+            <li>
+                <div class="fs1">字体大小12px</div>
+            </li>
+            <li>
+                <div class="fs1">字体大小12px</div>
+            </li>
+            <li>
+                <div class="fs1">字体大小12px</div>
+            </li>
+            <li>
+                <div class="fs1">字体大小12px</div>
+            </li>
+            <li>
+                <div class="fs1">字体大小12px</div>
+            </li>
+            <li>
+                <div class="fs1">字体大小12px</div>
+            </li>
+            <li>
+                <div class="fs1">字体大小12px</div>
+            </li>
+            <li>
+                <div class="fs1">字体大小12px</div>
+            </li>
+            <li>
+                <div class="fs1">字体大小12px</div>
+            </li>
+            <li>
+                <div class="fs1">字体大小12px</div>
+            </li>
+            <li>
+                <div class="fs1">字体大小12px</div>
+            </li>
+            <li>
+                <div class="fs1">字体大小12px</div>
+            </li>
+            <li>
+                <div class="fs1">字体大小12px</div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        我是行高50的底部
+    </div>
+</div>
+
+</body>
+</html>
