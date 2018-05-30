@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="base.css">
     <script type="text/javascript">
         //引入该flexible.min.js
-        !function(e,t){function n(){var n=l.getBoundingClientRect().width;t=t||540,n>t&&(n=t);var i=10*n/e;r.innerHTML="html{font-size:"+i+"px;}"}var i,d=document,o=window,l=d.documentElement,r=document.createElement("style");if(l.firstElementChild)l.firstElementChild.appendChild(r);else{var a=d.createElement("div");a.appendChild(r),d.write(a.innerHTML),a=null}n(),o.addEventListener("resize",function(){clearTimeout(i),i=setTimeout(n,300)},!1),o.addEventListener("pageshow",function(e){e.persisted&&(clearTimeout(i),i=setTimeout(n,300))},!1),"complete"===d.readyState?d.body.style.fontSize="16px":d.addEventListener("DOMContentLoaded",function(e){d.body.style.fontSize="16px"},!1)}(375,1200);
+        !function(e,t){function n(){var n=l.getBoundingClientRect().width;t=t||540,n>t&&(n=t);var i=100*n/e;r.innerHTML="html{font-size:"+i+"px;}"}var i,d=document,o=window,l=d.documentElement,r=document.createElement("style");if(l.firstElementChild)l.firstElementChild.appendChild(r);else{var a=d.createElement("div");a.appendChild(r),d.write(a.innerHTML),a=null}n(),o.addEventListener("resize",function(){clearTimeout(i),i=setTimeout(n,300)},!1),o.addEventListener("pageshow",function(e){e.persisted&&(clearTimeout(i),i=setTimeout(n,300))},!1),"complete"===d.readyState?d.body.style.fontSize="16px":d.addEventListener("DOMContentLoaded",function(e){d.body.style.fontSize="16px"},!1)}(375,1200);
     </script>
     <style>
 
@@ -22,9 +22,9 @@
         }
         .header, .footer {
             width: 100%;
-            height: 5rem;
-            line-height: 5rem;
-            font-size: 1.4rem;
+            height: .5rem;
+            line-height: .5rem;
+            font-size: .14rem;
             text-align: center;
         }
         .header {
@@ -32,8 +32,8 @@
         }
         .content {
             box-sizing: border-box;
-            height: calc(100% - 10rem);
-            padding: 1.5rem;
+            height: calc(100% - 1rem);
+            padding: 0.15rem;
             overflow: scroll;
         }
         .footer {
@@ -42,13 +42,13 @@
             background: #e6e6e6;
         }
         .fs1 {
-            font-size: 1.2rem;
+            font-size: .12rem;
         }
         /*列表*/
         .list-block li{
-            height: 4.5rem;
-            line-height: 4.5rem;
-            border-bottom: 0.1rem solid #e7e7e7;
+            height: .45rem;
+            line-height: .45rem;
+            border-bottom: 0.001rem solid #e7e7e7;
             color: #666;
         }
     </style>
@@ -66,13 +66,13 @@
                 <div class="fs1">以iphone6  750 设计图</div>
             </li>
             <li>
-                <div class="fs1">1rem = 10px</div>
+                <div class="fs1">1rem = 100px</div>
             </li>
             <li>
-                <div class="fs1">1px = 0.1rem</div>
+                <div class="fs1">1px = 0.01rem</div>
             </li>
             <li>
-                <div class="fs1">14px/10 = 1.4rem</div>
+                <div class="fs1">14px/100 = .14rem</div>
             </li>
             <li>
                 <div class="fs1">字体大小12px</div>
